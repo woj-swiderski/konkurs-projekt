@@ -1,0 +1,66 @@
+[
+  { "question" : "Językiem programowania nie jest",
+    "name" : "lang",
+    "choices" : [
+      "HTML",
+      "Python",
+      "C",
+      "JavaScript"
+    ],
+    "answer" : "0"
+  },
+
+  { "question" : "Przeglądarką internetową nie jest",
+    "name" : "browser",
+    "choices" : [
+      "Google Chrome",
+      "Firefox",
+      "Apple Mascara",
+      "Safari"
+    ],
+    "answer" : "2"
+  },
+
+  { "question" : "Pamięć RAM w komputerze służy do", 
+    "name" : "ram", 
+    "choices" : [
+      "Tymczasowego przechowywania danych podczas pracy komputera",
+      "Długotrwałego przechowywania danych, również po wyłączeniu komputera",
+      "Trwałego przechowywania informacji o konfiguracji komputera"
+    ],
+    "answer" : "0"
+  },
+
+  { "question" : "Systemem operacyjnym nie jest",
+    "name" : "opsys",
+    "choices" : [
+      "Linux",
+      "Microsoft Office",
+      "DOS",
+      "Android"
+    ],
+    "answer" : "1"
+  },
+
+  { "question" : "Program antywirusowy to",
+    "name" : "antivirus",
+    "choices" : [
+      "Program służący do śledzenia użytkowników w sieci Internet",
+      "Program ochrony społeczeństwa przed chorobami zakaźnymi",
+      "Program wykrywający i usuwający wirusy komputerowe",
+      "Program umożliwiający edycję dokumentów"
+    ],
+    "answer" : "2"
+  },
+  
+  { "question" : "Hotspot to",
+    "name" : "hotspot",
+    "choices" : [
+      "Punkt sprzedaży hotdogów",
+      "Miejsce, w którym można naładować telefon",
+      "Inna nazwa solarium",
+      "Publiczny punkt dostępu do Internetu"
+    ],
+    "answer" : "3"
+  }
+]

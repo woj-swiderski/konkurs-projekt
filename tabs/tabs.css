@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+  font-size: 100%;
+    font: inherit;
+  vertical-align: baseline;
+  outline: 0;
+}
+/* 
+* {
+  border: 1px solid black;
+} */
+
+body {
+    margin: 1rem;
+}
+
+:root {
+  --olive: rgb(179, 196, 87);
+  --lightolive: rgb(237, 255, 133);
+}
+
+.menu-bar {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+/* div for displaying contents */
+.vport {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: darkgray;
+  background-color: lightyellow;
+}
+
+.tab-b {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+
+  border-bottom: 1px solid gray;
+  background-color: var(--olive);
+
+  display: inline-block;
+  margin-left: .5rem;
+  padding: 0.3rem 0.5rem 0.3rem 2rem;
+  box-shadow: 1px 1px gray;
+}
+
+.tab-b:first-of-type {
+  margin-left: 0;
+}
+
+.tab-b::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0.6rem;
+  border-radius: 50%;
+
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+}
+
+.tab-b.active::before {
+  background-color: red;
+}
+
+.tab-b.active { 
+  color: red;
+}
+
+.tab-b:hover {
+  background: linear-gradient(to right, var(--olive), var(--lightolive));
+  cursor: pointer;
+}
+
+.tab-b:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 40%;
+  top: 15%;
+  left: 15%;
+  z-index: -1;
+  box-shadow:  .5rem .9rem .6rem gray;
+  transform: rotate(6deg);
+}
+
+legend {
+  border-radius: 5px;
+  background: silver;
+  padding: 5px;
+  margin: 0 .3rem;
+  border: none;
+}
+
+fieldset {
+  margin-top: 1rem;
+  border: none;
+}
